@@ -89,8 +89,8 @@ func updateMovie(w http.ResponseWriter, r *http.Request) {
 func main() {
 	r := mux.NewRouter()
 
-	movies = append(movies, Movie{ID: "1", Isbn: "43222", Title: "Movie one", Director: &Director{Firstname: "john", Lastname: "Doe"}})
-	movies = append(movies, Movie{ID: "2", Isbn: "42333", Title: "Movie two", Director: &Director{Firstname: "steve", Lastname: "smith"}})
+	movies = append(movies, Movie{ID: "1", Isbn: "43222", Title: "Movie one", Director: &Director{Firstname: "roushan", Lastname: "kumar"}})
+	movies = append(movies, Movie{ID: "2", Isbn: "42333", Title: "Movie two", Director: &Director{Firstname: "dodo", Lastname: "achyut"}})
 
 	r.HandleFunc("/movies", getMovies).Methods("GET")
 	r.HandleFunc("/movies/{id}", getMovie).Methods("GET")
